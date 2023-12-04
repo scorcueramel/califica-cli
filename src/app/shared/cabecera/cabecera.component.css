@@ -1,0 +1,66 @@
+
+.contenedor__imagen{
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 8px solid #acf04a;
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.logo__uva{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.titulo{
+  text-transform: uppercase;
+  color: #005ea5;
+  font-weight: 600;
+}
+
+.contenedor__nombre__sistema{
+  background-color: #fff;
+  border: 5px solid #acf04a;
+  padding: 20px;
+  width: 90vw;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.nombre__sistema{
+  font-size: 30px;
+}
+
+@media (min-width:960px) {
+  .d-md-block{
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 380px;
+  }
+
+  .contenedor__imagen{
+    margin: 0 auto;
+  }
+
+  .contenedor__nombre__sistema{
+    background-color: #fff;
+    border: 5px solid #acf04a;
+    padding: 20px;
+    width: 380px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .titulo{
+    text-transform: uppercase;
+    color: #005ea5;
+    font-weight: 600;
+  }
+
+  .nombre__sistema{
+    font-size: 30px;
+  }
+}

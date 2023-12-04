@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <app-cabecera></app-cabecera>
+  <div class="contendor__controles py-5 my-5">
+    <div class="row mt-4">
+      <div class="col-sm-12">
+        <h1 class="text-center titulo">Puntua tu atención</h1>
+      </div>
+    </div>
+    <div class="row my-4 contenedor__estrellas">
+      <div class="col-sm-12 mt-2">
+        <ngb-rating [(rate)]="rating" [(ngModel)]="calificacion.puntuacion">
+          <ng-template let-fill="fill" let-index="index">
+            <i class="bi-star{{ fill === 100 ? '-fill' : '' }}" [class.filled]="fill === 100" [class.low]="index < 2"></i>
+          </ng-template>
+        </ngb-rating>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-sm-12 mt-4">
+        <button type="button" class="btn btn-primary control" (click)="calificar();">Calificar</button>
+      </div>
+    </div>
+  </div>
+</div>

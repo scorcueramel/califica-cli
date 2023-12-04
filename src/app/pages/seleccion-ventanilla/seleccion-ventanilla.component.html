@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <app-cabecera></app-cabecera>
+  <div class="contendor__controles py-5 my-5">
+    <div class="row mt-4">
+      <div class="col-sm-12">
+        <h1 class="text-center titulo">Selección de Ventanilla</h1>
+      </div>
+    </div>
+    <div class="row my-4 pt-4">
+      <div class="col-sm-12 mt-4">
+        <select class="form-select control" name="id" [(ngModel)]="ventanilla.id">
+          <option [selected]="'selected'" value="">Seleccionar Ventanilla</option>
+          <option value="{{ v.id }}" *ngFor="let v of ventanillas">{{ v.numero }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mt-4 pt-4">
+      <div class="col-sm-12 mt-4">
+        <button type="button" class="btn btn-primary control" (click)="seleccionarVentanilla();">SELECCIONAR</button>
+      </div>
+    </div>
+  </div>
+</div>
